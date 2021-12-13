@@ -37,6 +37,11 @@ button {
     background-color: transparent;
 }
 
+a
+{
+    text-decoration: none;
+}
+
 /* Универсальное решение, которое убирает подсветку во всех браузерах и не только на input, но и на других элементах, в том числе select, button, a: */
 :active,
 :hover,

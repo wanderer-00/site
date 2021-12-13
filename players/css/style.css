@@ -1,0 +1,105 @@
+/* scroll bar */
+::-webkit-scrollbar {width: 8px; max-height: 8px;}
+::-webkit-scrollbar-track:vertical {background: #262626;}
+::-webkit-scrollbar-thumb:vertical {background: gray;}
+/* scroll цвет при наведении */
+::-webkit-scrollbar-thumb:vertical:hover {background: white;}
+/* уголок */
+::-webkit-scrollbar-corner {background: #262626;}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+h2 {
+    margin: 0px;
+}
+
+/*
+            <li class="character">
+                <a href="${character.url}">
+                    <h2>${character.name}</h2>
+                </a>
+                <img src="${character.image}"></img>
+                <p>КЛАН: ${character.clan}</p>
+            </li>
+*/
+
+.container {
+    padding: 30px;
+    margin: 0 auto;
+    max-width: 1000px;
+    text-align: center;
+}
+
+#charactersList {
+    padding-inline-start: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(1px, 0.4fr));
+    grid-gap: 20px;
+}
+
+.character {
+    list-style-type: none;
+    background-color: #2B2B2B;
+    border-radius: 4px;
+    padding: 0px 10px;
+    display: grid;
+    /* схема расстановки областей */
+    grid-template-areas:
+        'name'
+        'image'
+        'clan';
+    text-align: center;
+}
+
+.character > h2 {
+    /* присвоение области */
+    grid-area: name;
+    margin-bottom: 0px;
+}
+
+.character > img {
+    max-width: 100%;
+    /* присвоение области */
+    grid-area: image;
+    margin: auto;
+}
+
+.character > p {
+    /* присвоение области */
+    grid-area: clan;
+    margin: 0;
+    margin-top: 0px;
+}
+
+#searchWrapper {
+    position: relative;
+}
+.author{
+    color: rgba(255,255,255,.16);
+    position: absolute;
+}
+
+.cluster{
+    display: flex;
+}
+.d{
+    color: lightslategrey;
+    font-size: 0.8em;
+    padding: 4px 10px;
+    display:inline;
+    background-color: #121212;
+    border: 1px solid #2B2B2B;
+    border-top: 0;
+    border-radius: 0 0 0 4px;
+
+}
+.d:last-child{
+    border-left: 0;
+    border-radius: 0 0 4px 0;
+}
+
+@media (orientation: portrait) {
+    .container{padding: 10px}
+}

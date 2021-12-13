@@ -11,6 +11,30 @@
     --COL: #9DCFB6;
 }
 
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+button {
+    /* ОБНУЛЕНИЕ СТАНДАРТНЫХ СТИЛЕЙ */
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+/* Универсальное решение, которое убирает подсветку во всех браузерах и не только на input, но и на других элементах, в том числе select, button, a: */
+:active,
+:hover,
+:focus {
+    outline: 0;
+    outline-offset: 0;
+    box-shadow: 0;/* УДАЛЕНИЕ ТЕНИ ДЛЯ ЭТИХ ПСЕВДОКЛАССОВ */
+}
+
 /* SCROLL BAR */
 ::-webkit-scrollbar {width: 8px}
 ::-webkit-scrollbar-track {background: #18191d}
