@@ -1,0 +1,106 @@
+/* ПАЛИТРА */
+:root
+{
+    --BAG: #4c4a48;
+    --TXT: #F8E6C8;
+    --COL: #9DCFB6;
+}
+
+/* ИМПОРТ ШРИФТА */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}    
+
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*:after,
+*:before
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    //border: 1px solid purple;
+}
+
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+button {
+    /* ОБНУЛЕНИЕ СТАНДАРТНЫХ СТИЛЕЙ */
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+/* Универсальное решение, которое убирает подсветку во всех браузерах и не только на input, но и на других элементах, в том числе select, button, a: */
+:active,
+:hover,
+:focus {
+    outline: 0;
+    outline-offset: 0;
+    box-shadow: 0;/* УДАЛЕНИЕ ТЕНИ ДЛЯ ЭТИХ ПСЕВДОКЛАССОВ */
+}
+
+/* ТЕЛО ПРОЕКТА */
+body
+{
+    background-color: #343434;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100%
+}
+
+/* НАВИГАТОР */
+header
+{
+    
+    height: 100%;
+    width: 110px;
+    border-right: 2px solid var(--TXT);
+    
+}
+
+header .slot, .logo
+{
+    display: block;
+    margin: 10px;
+    //border-right: 3px solid var(--TXT);
+}
+
+header .logo
+{margin}
+
+header .slot div
+{
+    color: var(--TXT);
+    text-align: center;
+}
+
+ion-icon
+{
+    color: var(--TXT);
+    font-size: 80px;
+}
+
+/*
+        .grid
+        {
+            display: grid;
+
+            grid-template-rows: ;
+            width: 100%;
+            background: var(--dark_Grey);
+            grid-template-columns: 1fr 3fr;
+            grid-template-areas: "name name"
+                                 "image info"
+                                 "image tags"
+                                 "logs logs"
+                                 "scr scr"
+                                 "opening opening";
+        }*/
