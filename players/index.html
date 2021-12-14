@@ -29,6 +29,12 @@
             min-width: 180px;
             max-width: 30%;
         }
+        @media (orientation: portrait)
+        {
+            #charactersList {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
     </style>
     
 </head>
@@ -62,6 +68,10 @@
         <!-- КОНТЕНТ -->
         <ul id="charactersList"></ul>
     </div>
+    
+    <footer>
+        <div class="version">v0.1</div>
+    </footer>
 
 <!--
     <a class="author" href="https://www.youtube.com/watch?v=wxz5vJ1BWrc">
