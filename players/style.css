@@ -1,14 +1,11 @@
-:root {
-    --dark_Grey: #2D2D2D;
-    --light_Grey: #343434;
-}
-
 /* ПАЛИТРА */
 :root
 {
     --BAG: #4c4a48;
     --TXT: #F8E6C8;
     --COL: #9DCFB6;
+    --dark_Grey: #2D2D2D;
+    --light_Grey: #343434;
 }
 
 /* ОБНУЛЕНИЕ СТИЛЕЙ */
@@ -56,6 +53,7 @@ body
     background-color: var(--light_Grey);
 }
 
+/* HEADER */
 header
 {
     top: 0;
@@ -66,23 +64,6 @@ header
     position: fixed;
     background: var(--dark_Grey);
     border-bottom: 2px solid var(--TXT);
-}
-
-.grid
-{
-    margin-top: 60px;
-    display: grid;
-    grid-template-rows: ;
-    width: 100%;
-    background: var(--dark_Grey);
-    grid-template-columns: 1fr 3fr;
-    grid-template-areas: "name name"
-                         "image info"
-                         "image clan"
-                         "image tags"
-                         "logs logs"
-                         "scr scr"
-                         "opening opening";
 }
 
 .box:first-child {margin-left: 8px;}
@@ -108,6 +89,24 @@ header .box:last-child
 {
     position: absolute;
     right: 0;
+}
+
+
+.grid
+{
+    margin-top: 60px;
+    display: grid;
+    grid-template-rows: ;
+    width: 100%;
+    background: var(--dark_Grey);
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: "name name"
+                         "image info"
+                         "image clan"
+                         "image tags"
+                         "logs logs"
+                         "scr scr"
+                         "opening opening";
 }
 
 .grid-item:first-child { margin: 10px }
