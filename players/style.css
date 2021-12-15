@@ -158,7 +158,25 @@ header .box:last-child
     border-radius: 4px;
     background-color: green;
 }
-.logs { grid-area: logs }
+.logs
+{
+    grid-area: logs;
+    text-align: left;
+    padding: 10px;
+}
+.twinkTitle
+{
+/*    border: 1px solid pink;*/
+    text-align: center;
+}
+.twink
+{
+    display: inline-block;
+    border: 2px solid var(--TXT);
+    padding: 2px 4px;
+    margin-top: 10px;
+}
+
 .scr
 {
     display: inline-block;
