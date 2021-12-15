@@ -50,10 +50,10 @@ const displayCharacters = (characters) => {
         // return - останавливает выполнение функции
         return`
             <li class="character">
-                <a href="${character.url}">
+                <a href="players/${character.url}">
                     <h2>${character.name}</h2>
                 </a>
-                <img src="${character.image}"></img>
+                <img src="img/${character.image}"></img>
                 <p>КЛАН: ${character.clan}</p>
             </li>
         `;
