@@ -26,8 +26,7 @@ h2 {
 */
 
 .container {
-    padding: 30px;
-    margin: 0 auto;
+    margin: 70px auto;
     max-width: 1000px;
     text-align: center;
 }
