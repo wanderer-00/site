@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CLANS`s</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- ПОДКЛЮЧЕНИЕ ИКОНОК -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+    <style>
+        *{border: 1px solid purple;box-sizing: border-box}
+        a
+        {
+            color: pink;
+            text-decoration: none;
+        }
+        li{}
+        body
+        {
+            background-color: #343434;
+            padding: 0;
+            margin: 0;
+        }
+        input
+        {
+            padding: 10px;
+        }
+        .version
+        {
+            color: white;
+            position: absolute;
+            bottom: 20px;
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 0 6px 6px 0;
+            background-color: var(--dark_Grey);
+        }
+        @media (orientation: portrait)
+        {
+            #charactersList {
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 6px;
+            }
+            input
+            {
+                min-width: 90%;
+            }
+        }
+    </style>
+    
+</head>
+<body>
+
+<!--
+<li class="character">
+    <a href="players/${character.url}">
+        <h2>${character.name}</h2>
+    </a>
+    <img src="img/${character.image}">
+</li>
+-->
+   
+    <header>
+        <a class="box" href='../index.html'>
+            <ion-icon name="image"></ion-icon>
+        </a>
+        <a class="box" href="../map/JourneyMap.html">
+            <ion-icon name="map-sharp"></ion-icon>
+        </a>
+        <a class="box">
+            <ion-icon name="man-outline"></ion-icon>
+        </a>
+        <a class="box" href=''>
+            <ion-icon name="volume-medium-outline"></ion-icon>
+        </a>
+        <a class="box" href=''>
+            <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+        </a>
+    </header>
+
+    <div class="container">
+
+        <!-- ПОИСК -->
+        <div id="searchWrapper">
+            <input type="text" name="searchBar" id="searchBar" placeholder="НИК | КЛАН" />
+        </div>
+
+        <!-- КОНТЕНТ -->
+        <ul id="charactersList"></ul>
+    </div>
+    
+    <footer>
+        <div class="version">v0.1</div>
+    </footer>
+
+<!--
+    <a class="author" href="https://www.youtube.com/watch?v=wxz5vJ1BWrc">
+        Author: https://www.youtube.com/watch?v=wxz5vJ1BWrc
+    </a>
+-->
+    <script src="js/script.js"></script>
+</body></html>
