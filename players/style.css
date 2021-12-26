@@ -64,6 +64,7 @@ header
     position: fixed;
     background: var(--dark_Grey);
     border-bottom: 2px solid var(--TXT);
+    z-index: 1;
 }
 
 .box:first-child {margin-left: 8px;}
